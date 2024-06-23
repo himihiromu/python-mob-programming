@@ -23,6 +23,7 @@ class TestingConfig(BaseConfig):
     TESTING = True
     # DATABASE_URI = f"sqlite:///{Path(__file__).parent.parent / 'test.sqlite'}"
     DATABASE_URI = "sqlite:///:memory:"
+    SQLALCHEMY_DATABASE_URI = "sqlite:///:memory:"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     #SQLをコンソールログに出力する設定
     SQLALCHEMY_ECHO = True
